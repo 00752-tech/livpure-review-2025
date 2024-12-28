@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { CTAButtons } from './cta-buttons'
 
 export function HeroSection() {
   return (
@@ -21,6 +22,7 @@ export function HeroSection() {
             <p className="text-lg leading-8 text-gray-600 mb-8">
               Liv Pure is a revolutionary natural supplement designed to support optimal liver function and promote healthy weight management. Our unique blend of powerful ingredients works synergistically to enhance your body's natural fat-burning processes.
             </p>
+            <CTAButtons />
           </div>
         </div>
       </div>
