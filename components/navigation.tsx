@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
+import { MobileMenuButton } from './mobile-menu-button'
 
 const navigation = [
   { name: 'Benefits', href: '#benefits' },
@@ -41,6 +42,9 @@ export function Navigation() {
             <span className="text-xl font-bold">LivPureReview2025.com</span>
           </Link>
         </div>
+        <div className="flex lg:hidden">
+          <MobileMenuButton />
+        </div>
         <div className="hidden lg:flex lg:gap-x-8">
           {navigation.map((item) => (
             <a
@@ -56,3 +60,4 @@ export function Navigation() {
     </header>
   )
 }
+
